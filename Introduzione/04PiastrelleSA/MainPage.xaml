@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_04PiastrelleSA.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Calcolatore di Piastrelle"
+                FontSize="Header"
+                HorizontalOptions="Center"/>
+            <Line
+                X1="10"
+                Y1="0"
+                X2="1300"
+                Y2="0"
+                Stroke="Blue"/>
+            <Label
+                Text="Dimensione Pavimento"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Text="Lunghezza (cm)"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+                    <Label
+                        Text="Larghezza (cm)"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+                    <Entry
+                        x:Name="EntLungPav"
+                        WidthRequest="150"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="LightBlue"/>
+                    <Entry
+                        x:Name="EntLargPav"
+                        WidthRequest="150"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="LightBlue"/>
+                </Grid>
+            </HorizontalStackLayout>
+            <Line
+                X1="10"
+                Y1="0"
+                X2="1300"
+                Y2="0"
+                Stroke="Blue"/>
+            <Label
+                Text="Dimensione Piastrella"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Text="Lunghezza (cm)"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+                    <Label
+                        Text="Larghezza (cm)"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+                    <Entry
+                        x:Name="EntLungPiasrt"
+                        WidthRequest="150"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="LightBlue"/>
+                    <Entry
+                        x:Name="EntLargPiastr"
+                        WidthRequest="150"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="LightBlue"/>
+                </Grid>
+            </HorizontalStackLayout>
+            <Line
+                X1="10"
+                Y1="0"
+                X2="1300"
+                Y2="0"
+                Stroke="Blue"/>
+            <Label
+                Text="Numero Piastrelle"
+                HorizontalOptions="Center"/>
+            <Entry
+                x:Name="EntRisultato"
+                WidthRequest="150"
+                BackgroundColor="LightBlue"/>
+            <Button
+                x:Name="buttonCalcola"
+                Clicked="CalcolaPiastrelle"
+                Text="Calcola"
+                WidthRequest="150"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

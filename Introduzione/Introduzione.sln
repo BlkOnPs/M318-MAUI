@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01Orario", "01Orario\01Orar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03RidimensionaBox", "03RidimensionaBox\03RidimensionaBox.csproj", "{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Layout", "04Layout\04Layout.csproj", "{D418486E-31C5-4270-A895-B5184BB36E1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D418486E-31C5-4270-A895-B5184BB36E1C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

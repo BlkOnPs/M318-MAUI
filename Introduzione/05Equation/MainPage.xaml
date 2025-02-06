@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_05Equation.MainPage">
+
+    <ScrollView BackgroundColor="White">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="CALCOLO EQUAZIONI SECONDO GRADO"
+                HorizontalTextAlignment="Center"
+                FontSize="Header"
+                TextColor="Blue"
+                FontAttributes="Bold"/>
+            <Line
+                X1="0"
+                Y1="0"
+                X2="2000"
+                Y2="0"
+                Stroke="LightBlue"
+                StrokeThickness="3"/>
+            <Label
+                Text="Inserisci i valori dell'equazione di secondo grado:"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"/>
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Text="A:"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    TextColor="Black"
+                    HorizontalOptions="Center"/>
+                <Entry
+                    x:Name="EntA"
+                    Placeholder="Inserisci A.."
+                    Background="LightCyan"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    WidthRequest="150"/>
+                <Label
+                    Text="B:"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    TextColor="Black"
+                    HorizontalOptions="Center"/>
+                <Entry
+                    x:Name="EntB"
+                    Placeholder="Inserisci B.."
+                    Background="LightCyan"
+                    TextColor="Black"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    WidthRequest="150"/>
+                <Label
+                    Text="C:"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    TextColor="Black"
+                    HorizontalOptions="Center"/>
+                <Entry
+                    x:Name="EntC"
+                    Placeholder="Inserisci C.."
+                    TextColor="Black"
+                    Background="LightCyan"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    WidthRequest="150"/>
+            </Grid>
+            <Button
+                WidthRequest="200"
+                BorderColor="Black"
+                BorderWidth="2"
+                Text="Calcola"
+                Clicked="CalcolaFunzione"
+                HorizontalOptions="Center"/>
+            <Line
+                X1="0"
+                Y1="0"
+                X2="2000"
+                Y2="0"
+                Stroke="LightBlue"
+                StrokeThickness="3"/>
+            <Grid HorizontalOptions="Center" 
+                  VerticalOptions="Center"
+                  ColumnSpacing="90">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label 
+                    Text="EQUAZIONE"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntEquazione"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    TextColor="Black"
+                    WidthRequest="250"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="DIREZIONE PARABOLA"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntDirezione"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="250"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="X VERTICE"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntXVertice"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="100"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="Y VERTICE"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntYVertice"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="100"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="DELTA RISULTATO"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntDelta"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="250"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="NUMERO PUNTI INTERSEZIONE"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntNPunti"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="250"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="PUNTI INTERSEZIONE"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    TextColor="Black"/>
+                <Entry 
+                    x:Name="EntPunti"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Background="LightGray"
+                    WidthRequest="250"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

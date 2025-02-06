@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00Introduzione", "00Introdu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01Orario", "01Orario\01Orario.csproj", "{309C40E9-750D-41FB-A78D-F3B4F6759BC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03RidimensionaBox", "03RidimensionaBox\03RidimensionaBox.csproj", "{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03RidimensionaBox", "03RidimensionaBox\03RidimensionaBox.csproj", "{682C7888-0D7D-4300-8AB5-6A5A65CFFF6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Layout", "04Layout\04Layout.csproj", "{D418486E-31C5-4270-A895-B5184BB36E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04Layout", "04Layout\04Layout.csproj", "{D418486E-31C5-4270-A895-B5184BB36E1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04PiastrelleSA", "04PiastrelleSA\04PiastrelleSA.csproj", "{E68D406E-0A05-45A2-8AFF-225357861BA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04PiastrelleSA", "04PiastrelleSA\04PiastrelleSA.csproj", "{E68D406E-0A05-45A2-8AFF-225357861BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Equation", "05Equation\05Equation.csproj", "{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,12 @@ Global
 		{E68D406E-0A05-45A2-8AFF-225357861BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E68D406E-0A05-45A2-8AFF-225357861BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E68D406E-0A05-45A2-8AFF-225357861BA8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CAE136E-6620-4932-8FD4-FBDB0BE9E42A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

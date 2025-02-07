@@ -14,9 +14,16 @@ namespace _05Equation
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(EntA.Text) || string.IsNullOrWhiteSpace(EntB.Text) || string.IsNullOrWhiteSpace(EntC.Text))
+                {
+                    MostraMessaggio("Inserisci tutti i valori in tutti i campi...");
+                    return;
+                }
+
                 int aNum = Convert.ToInt32 (EntA.Text);
                 int bNum = Convert.ToInt32 (EntB.Text);
                 int cNum = Convert.ToInt32 (EntC.Text);
+
                 String ElevatoDue = "";
                 String x = "";
                 if (bNum < 0)

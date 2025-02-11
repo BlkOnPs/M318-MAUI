@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06Navigazione", "06Navigazi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07ForzaPeso", "07ForzaPeso\07ForzaPeso.csproj", "{010842B1-FF54-42BB-AA3D-60B82C4C0782}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08GeneratorePassword", "08GeneratorePassword\08GeneratorePassword.csproj", "{723F8AE3-C4C7-47A8-B56F-30430CC7210F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,12 @@ Global
 		{010842B1-FF54-42BB-AA3D-60B82C4C0782}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010842B1-FF54-42BB-AA3D-60B82C4C0782}.Release|Any CPU.Build.0 = Release|Any CPU
 		{010842B1-FF54-42BB-AA3D-60B82C4C0782}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723F8AE3-C4C7-47A8-B56F-30430CC7210F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

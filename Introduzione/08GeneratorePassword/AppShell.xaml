@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_08GeneratorePassword.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_08GeneratorePassword"
+    Shell.FlyoutBehavior="Disabled"
+    Title="_08GeneratorePassword">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Generatore Password"
+            ContentTemplate="{DataTemplate local:GeneratorePassword}"
+            Route="GeneratorePasswordPage" />
+        <ShellContent
+            Title="Sicurezza Password"
+            ContentTemplate="{DataTemplate local:Sicurezza}"
+            Route="SicurezzaPage" />
+    </TabBar>
+</Shell>

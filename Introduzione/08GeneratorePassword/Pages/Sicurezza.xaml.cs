@@ -6,4 +6,9 @@ public partial class Sicurezza : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnClickedConvalidaPassword ( object sender, EventArgs e )
+    {
+
+    }
 }

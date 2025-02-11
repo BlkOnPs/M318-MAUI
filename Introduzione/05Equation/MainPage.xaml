@@ -82,7 +82,7 @@
                 BorderColor="Black"
                 BorderWidth="2"
                 Text="Calcola"
-                Clicked="CalcolaFunzione"
+                Clicked="OnClickedCalcolaFunzione"
                 HorizontalOptions="Center"/>
             <Line
                 X1="0"

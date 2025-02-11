@@ -10,7 +10,7 @@ namespace _05Equation
             InitializeComponent();
         }
 
-        private void CalcolaFunzione ( object sender, EventArgs e)
+        private void OnClickedCalcolaFunzione ( object sender, EventArgs e)
         {
             try
             {

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_07ForzaPeso.Calcolatore"
+             Title="Calcolatore">
+    <VerticalStackLayout>
+        <Label 
+            Text="Calcolatore Forza Peso"
+            FontSize="Header"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid RowSpacing="50" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <VerticalStackLayout Grid.Row="0" Grid.Column="0" Spacing="15" Margin="90">
+                <Entry
+                    x:Name="EntValore"
+                    Placeholder="Inserisci valore..."
+                    WidthRequest="250"/>
+                <Button
+                    Text="Calcola"
+                    Clicked="OnClickedCalcolaForzaPeso"
+                    WidthRequest="250"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
+                <Label
+                    Text="Luna"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"/>
+                <Image
+                    Source="luna.jpg"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntLuna"
+                    WidthRequest="150"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1" Grid.Column="0" Spacing="10">
+                <Label
+                    Text="Marte"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"/>
+                <Image
+                    Source="marte.jpg"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntMarte"
+                    WidthRequest="150"/>
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="10">
+                <Label
+                    Text="Terra"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"/>
+                <Image
+                    Source="terra.jpg"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="EntTerra"
+                    WidthRequest="150"/>
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

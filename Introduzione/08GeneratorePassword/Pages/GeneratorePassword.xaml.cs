@@ -11,7 +11,7 @@ public partial class GeneratorePassword : ContentPage
 
 	
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private void OnClickedGeneraPassword(object sender, EventArgs e)
     {
         try
         {

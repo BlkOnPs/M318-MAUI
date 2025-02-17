@@ -63,5 +63,18 @@
             Text="Convalida"
             Background="Red"
             TextColor="White"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+            <Label
+                Text="STATO:"
+                FontSize="Header"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                x:Name="LabelStato"
+                Text="Inserisci password"
+                HorizontalTextAlignment="Center"
+                FontSize="Header"
+                FontAttributes="Bold"/>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

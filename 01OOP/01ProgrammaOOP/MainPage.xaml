@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_01ProgrammaOOP.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Lato Minore"/>
+            <Entry x:Name="entLatoMinore"/>
+
+            <Label Text="Lato Maggiore"/>
+            <Entry x:Name="entLatoMaggiore"/>
+            
+            <Label Text="Area"/>
+            <Entry x:Name="entArea" IsReadOnly="True"/>
+
+            <Label Text="Perimetro"/>
+            <Entry x:Name="entPerimetro" IsReadOnly="True"/>
+
+            <Button Text="Calcola" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

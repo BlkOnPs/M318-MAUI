@@ -9,7 +9,7 @@ public partial class Sicurezza : ContentPage
 
     private void OnClickedConvalidaPassword ( object sender, EventArgs e )
     {
-        if (EntPassword.Text == "")
+        if (EntPassword.Text.Trim() == null)
         {
             LabelStato.Text = "Inserisci una password";
             return;

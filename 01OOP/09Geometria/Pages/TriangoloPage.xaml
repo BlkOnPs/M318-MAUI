@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_09Geometria.TriangoloPage"
+             Title="TriangoloPage">
+    <VerticalStackLayout>
+        <Label Text="Inserisci base" HorizontalOptions="Center"/>
+        <Entry x:Name="entBase" WidthRequest="200"/>
+
+        <Label Text="Inserisci altezza" HorizontalOptions="Center"/>
+        <Entry x:Name="entAltezza" WidthRequest="200"/>
+
+        <Label Text="Area" HorizontalOptions="Center"/>
+        <Entry x:Name="entArea" IsReadOnly="True" WidthRequest="200"/>
+
+        <Label Text="Perimetro" HorizontalOptions="Center"/>
+        <Entry x:Name="entPerimetro" IsReadOnly="True" WidthRequest="200"/>
+
+        <Button Text="Calcola" Clicked="Button_Clicked" WidthRequest="400"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -4,7 +4,7 @@
              x:Class="_09Geometria.CerchioPage"
              Title="Cerchio">
     <VerticalStackLayout>
-        <Label Text="Inserisci raggio del crchio:" HorizontalOptions="Center"/>
+        <Label Text="Inserisci raggio del cerchio:" HorizontalOptions="Center"/>
         <Entry x:Name="entRaggio" HorizontalOptions="Center" WidthRequest="200"/>
 
         <Label Text="Area Cerchio:" HorizontalOptions="Center"/>

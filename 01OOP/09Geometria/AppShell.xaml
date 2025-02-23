@@ -8,12 +8,12 @@
     Title="_09Geometria">
 
     <TabBar>
-       <ShellContent
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
-       <ShellContent
+        <ShellContent
         Title="Rettangolo"
         ContentTemplate="{DataTemplate local:RettangoloPage}"
         Route="RettangoloPage" />
@@ -22,7 +22,22 @@
          Title="Cerchio"
          ContentTemplate="{DataTemplate local:CerchioPage}"
          Route="CerchioPage" />
-    </TabBar>
-    
 
+        <ShellContent
+         Title="Cubo"
+         ContentTemplate="{DataTemplate local:CuboPage}"
+         Route="CuboPage" />
+        <ShellContent
+         Title="Sfera"
+         ContentTemplate="{DataTemplate local:SferaPage}"
+         Route="SferaPage" />
+        <ShellContent
+         Title="Punto"
+         ContentTemplate="{DataTemplate local:PuntoPage}"
+         Route="PuntoPage" />
+        <ShellContent
+         Title="Triangolo"
+         ContentTemplate="{DataTemplate local:TriangoloPage}"
+         Route="TriangoloPage" />
+    </TabBar>
 </Shell>

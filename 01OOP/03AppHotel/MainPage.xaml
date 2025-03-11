@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_03AppHotel.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame Margin="5">
+                <VerticalStackLayout>
+                    <Label FontSize="Title" Text="Hotel Pokemon" HorizontalOptions="Center"/>
+                    <Label FontSize="Subtitle" Text="Calcolatore Costi" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Margin="5">
+                <VerticalStackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+                            <Polygon Points="60,0 0,30, 60,60" Stroke="Black" Fill="Black"
+                                HorizontalOptions="Center" VerticalOptions="Center">
+                                <Polygon.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Polygon.GestureRecognizers>
+                            </Polygon>
+
+                            <Image x:Name="imageStanza" Source="image.jpg" WidthRequest="500" HeightRequest="400" Aspect="AspectFit"/>
+
+                            <Polygon Points="0,0 60,30, 0,60" Stroke="Black" Fill="Black"
+                                HorizontalOptions="Center" VerticalOptions="Center">
+                                <Polygon.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                                </Polygon.GestureRecognizers>
+                            </Polygon>
+                        </HorizontalStackLayout>
+
+                        <VerticalStackLayout Grid.Row="1">
+                            <HorizontalStackLayout>
+                                <Label Text="Stanza numero:" VerticalOptions="Center"/>
+                                <Entry x:Name="entStanza" IsReadOnly="True"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Costo:" VerticalOptions="Center"/>
+                                <Entry x:Name="entCosto" IsReadOnly="True"/>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Margin="5">
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Animali" VerticalOptions="Center"/>
+                        <CheckBox x:Name="checkAnimali"/>
+                        <Label Text="Supplemente 20 Fr.- x giorno" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Numero Persone" VerticalOptions="Center"/>
+                        <Stepper x:Name="stepPersone" ValueChanged="stepPersone_ValueChanged" 
+                                 HeightRequest="40" WidthRequest="80"/>
+                        <Entry x:Name="entPersone" IsReadOnly="True"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Data arrivo" VerticalOptions="Center"/>
+                        <DatePicker x:Name="dateArrivo" Format="dd/MM/yyyy"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Data Partenza" VerticalOptions="Center"/>
+                        <DatePicker x:Name="datePartenza" Format="dd/MM/yyyy"/>
+                    </HorizontalStackLayout>
+                    <Editor x:Name="editOss"
+                            IsReadOnly="True"
+                            MaxLength="50" HeightRequest="100" />
+                    <Button Clicked="Button_Clicked" Text="Calcola costo"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

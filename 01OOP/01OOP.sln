@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01ProgrammaOOP", "01ProgrammaOOP\01ProgrammaOOP.csproj", "{B7A23380-B983-44AA-83B5-B1D08B9C3F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01ProgrammaOOP", "01ProgrammaOOP\01ProgrammaOOP.csproj", "{B7A23380-B983-44AA-83B5-B1D08B9C3F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09Geometria", "09Geometria\09Geometria.csproj", "{E426572E-1E1D-458B-9A03-DD197350F0F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09Geometria", "09Geometria\09Geometria.csproj", "{E426572E-1E1D-458B-9A03-DD197350F0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03AppHotel", "03AppHotel\03AppHotel.csproj", "{7C99EE72-7976-48BF-A16A-450809AAC7CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,12 @@ Global
 		{E426572E-1E1D-458B-9A03-DD197350F0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E426572E-1E1D-458B-9A03-DD197350F0F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E426572E-1E1D-458B-9A03-DD197350F0F1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C99EE72-7976-48BF-A16A-450809AAC7CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

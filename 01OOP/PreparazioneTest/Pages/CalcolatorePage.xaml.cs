@@ -28,11 +28,11 @@ public partial class CalcolatorePage : ContentPage
             entSoglia.Text = cal.CalcolaSoglia ();
             boxQudrato.Color = Color.FromArgb (cal.ColoreSoglia);
         }
-        catch (FormatException) // Se l'input non è un numero
+        catch (FormatException)
         {
             MostraMessaggio ("Inserire solo numeri validi.");
         }
-        catch (ArgumentOutOfRangeException) // Se il numero è negativo
+        catch (ArgumentOutOfRangeException)
         {
             MostraMessaggio ("Inserire solo valori positivi.");
         }

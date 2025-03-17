@@ -15,7 +15,8 @@
             x:Name="entDB"
             Placeholder="Inserisci dB"
             HorizontalTextAlignment="Start"
-            WidthRequest="300"/>
+            WidthRequest="300"
+            TextColor="Green"/>
         <Label
             Text="Soglia"/>
         <Entry

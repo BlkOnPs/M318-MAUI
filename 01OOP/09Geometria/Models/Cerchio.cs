@@ -72,6 +72,8 @@ namespace _09Geometria.Models
         {
             return Math.PI * 2 * Raggio;
         }
+
         #endregion
+
     }
 }

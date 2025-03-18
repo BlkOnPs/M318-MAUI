@@ -22,7 +22,7 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
-                            <Polygon Points="60,0 0,30, 60,60" Stroke="Black" Fill="Black"
+                            <Polygon Points="60,0 0,30, 60,60" Stroke="Black" Fill="White"
                                 HorizontalOptions="Center" VerticalOptions="Center">
                                 <Polygon.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -31,7 +31,7 @@
 
                             <Image x:Name="imageStanza" Source="image.jpg" WidthRequest="500" HeightRequest="400" Aspect="AspectFit"/>
 
-                            <Polygon Points="0,0 60,30, 0,60" Stroke="Black" Fill="Black"
+                            <Polygon Points="0,0 60,30, 0,60" Stroke="Black" Fill="White"
                                 HorizontalOptions="Center" VerticalOptions="Center">
                                 <Polygon.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>

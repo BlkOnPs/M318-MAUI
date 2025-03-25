@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03AppHotel", "03AppHotel\03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreparazioneTest", "PreparazioneTest\PreparazioneTest.csproj", "{B7DBC5BE-59B8-49D0-93EC-17CE7502D5DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListeApp", "ListeApp\ListeApp.csproj", "{233B425A-C698-48F0-A22E-4E9BA7F510E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListeApp", "ListeApp\ListeApp.csproj", "{233B425A-C698-48F0-A22E-4E9BA7F510E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApp", "PizzaApp\PizzaApp.csproj", "{37DED80C-A6CD-4914-BD47-F8114E0780A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,12 @@ Global
 		{233B425A-C698-48F0-A22E-4E9BA7F510E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{233B425A-C698-48F0-A22E-4E9BA7F510E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{233B425A-C698-48F0-A22E-4E9BA7F510E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DED80C-A6CD-4914-BD47-F8114E0780A8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

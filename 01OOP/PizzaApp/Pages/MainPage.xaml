@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PizzaApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Frame>
+                <Label Text="Menu Pizze" HorizontalOptions="Center" FontSize="Title"/>
+            </Frame>
+            <Label Text="Seleziona il tipo di pizza" HorizontalOptions="Start" FontSize="Subtitle"/>
+            <Picker x:Name="pickPizza" SelectedIndexChanged="pickPizza_SelectedIndexChanged" WidthRequest="500" HorizontalTextAlignment="Start" HorizontalOptions="Start"/>
+            <Frame>
+                <HorizontalStackLayout Padding="30" Spacing="30">
+                    <Image x:Name="imagePizza" HorizontalOptions="Start" WidthRequest="200"/>
+                    <VerticalStackLayout HorizontalOptions="End">
+                        <Label x:Name="labelPizza" HorizontalOptions="Start"/>
+                        <Label x:Name="labelPrezzo" HorizontalOptions="Start"/>
+                        <Label x:Name="labelIngredienti" HorizontalOptions="Start" FontSize="Caption"/>
+                        <HorizontalStackLayout IsVisible="Hidden" x:Name="horizontal">
+                            <Label Text="Valuta la pizza"/>
+                            <Entry x:Name="entValutazione" WidthRequest="100" IsReadOnly="True"/>
+                            <Stepper x:Name="stepperValuta" ValueChanged="stepperValuta_ValueChanged"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

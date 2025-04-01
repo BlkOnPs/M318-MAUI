@@ -20,6 +20,7 @@ namespace PizzaApp.Models
             set { _nome = value; }
         }
 
+
         public float Prezzo
         {
             get { return _prezzo; }

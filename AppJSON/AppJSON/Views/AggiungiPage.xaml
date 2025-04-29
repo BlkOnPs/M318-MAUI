@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppJSON.AggiungiPage"
+             Title="AggiungiPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Titolo:" />
+            <Entry x:Name="entTitolo" Margin="0,0,0,10"/>
+
+            <Label Text="Autore:"/>
+            <Entry x:Name="entAutore" Margin="0,0,0,10"/>
+
+            <Label Text="Anno di PUbblicazione:"/>
+            <Entry x:Name="entAnnoPubblicazione" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+            <Button x:Name="btSave" Text="Aggiungi" Clicked="btSave_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

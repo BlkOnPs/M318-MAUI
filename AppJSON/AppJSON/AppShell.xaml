@@ -17,5 +17,10 @@
         Title="Catalogo"
         ContentTemplate="{DataTemplate local:CatalogoPage}"
         Route="MainPage" />
+
+        <ShellContent
+            Title="AggiungiLibro"
+            ContentTemplate="{DataTemplate local:AggiungiPage}"
+            Route="MainPage"/>
     </TabBar>
 </Shell>

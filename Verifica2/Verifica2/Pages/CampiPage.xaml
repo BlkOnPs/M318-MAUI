@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Verifica2.CampiPage"
+             Title="CampiPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="5">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Image x:Name="imgGolf" Source="logo.png" WidthRequest="600" HorizontalOptions="Start" Grid.Column="0" Grid.Row="0"/>
+                <VerticalStackLayout Grid.Column="1" Grid.Row="0" Spacing="10" Padding="5">
+                    <Picker x:Name="pickCampi" Title="Seleziona campo" SelectedIndexChanged="pickCampi_SelectedIndexChanged"/>
+
+                    <Label Text="Nome del campo" FontAttributes="Bold"/>
+                    <Entry x:Name="entNome" IsReadOnly="True"/>
+
+                    <Label Text="Indirizzo" FontAttributes="Bold"/>
+                    <Entry x:Name="entIndirizzo" IsReadOnly="True"/>
+
+                    <Label Text="NAP" FontAttributes="Bold"/>
+                    <Entry x:Name="entNAP" IsReadOnly="True"/>
+
+                    <Label Text="Località" FontAttributes="Bold"/>
+                    <Entry x:Name="entLoc" IsReadOnly="True"/>
+
+                    <Label Text="Nome e cognome del responsabile" FontAttributes="Bold"/>
+                    <Entry x:Name="entResp" IsReadOnly="True"/>
+
+                    <Label Text="Telefono" FontAttributes="Bold"/>
+                    <Entry x:Name="entTel" IsReadOnly="True"/>
+
+                    <Label Text="Link sito Internet" FontAttributes="Bold"/>
+                    <Entry x:Name="entLink" IsReadOnly="True"/>
+
+                    <Label Text="Commento" FontAttributes="Bold" />
+                    <Entry x:Name="entCommento" TextChanged="entCommento_TextChanged"/>
+
+                    <Label Text="Preferito" FontAttributes="Bold"/>
+                    <CheckBox x:Name="checkPreferito" CheckedChanged="checkPreferito_CheckedChanged"/>
+                </VerticalStackLayout>
+                
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

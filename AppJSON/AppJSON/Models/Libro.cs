@@ -8,13 +8,13 @@ namespace AppJSON.Models
 {
     internal class Libro
     {
-		private string _titolo;
+        private string _titolo;
 
-		public string Titolo
-		{
-			get { return _titolo; }
-			set { _titolo = value; }
-		}
+        public string Titolo
+        {
+            get { return _titolo; }
+            set { _titolo = value; }
+        }
 
         private string _autore;
 
@@ -32,7 +32,8 @@ namespace AppJSON.Models
             set { _annoPubblicazione = value; }
         }
 
-        public Libro(string titolo, string autore, int annoPubblicazione) {
+        public Libro(string titolo, string autore, int annoPubblicazione)
+        {
             Titolo = titolo;
             Autore = autore;
             AnnoPubblicazione = annoPubblicazione;
@@ -41,6 +42,16 @@ namespace AppJSON.Models
         public override string? ToString()
         {
             return Titolo + " - " + Autore;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Libro libro && Titolo == libro.Titolo && Autore == libro.Autore && AnnoPubblicazione == libro.AnnoPubblicazione;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Titolo,Autore, AnnoPubblicazione);
         }
     }
 }

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProvaJson.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20">
+            <Frame>
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Catalogo videogames" FontSize="Header"/>
+                    <Picker x:Name="PickVideogames" Title="Seleziona un videogame" SelectedIndexChanged="PickVideogames_SelectedIndexChanged"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Titolo" FontAttributes="Bold"/>
+                    <Entry x:Name="entTitolo" IsReadOnly="True"/>
+
+                    <Label Text="Sviluppatore" FontAttributes="Bold"/>
+                    <Entry x:Name="entSviluppatore" IsReadOnly="True"/>
+
+                    <Label Text="Descrizione" FontAttributes="Bold"/>
+                    <Editor x:Name="entDescrizione" IsReadOnly="True"/>
+
+                    <Label Text="Commento" FontAttributes="Bold"/>
+                    <Editor x:Name="entCommento" TextChanged="entCommento_TextChanged"/>
+
+                    <Label Text="Galleria" FontAttributes="Bold"/>
+                    <Image x:Name="imgGalleria"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

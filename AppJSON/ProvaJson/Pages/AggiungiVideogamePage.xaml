@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProvaJson.AggiungiVideogamePage"
+             Title="AggiungiVideogamePage">
+    <VerticalStackLayout>
+        <Entry x:Name="entTitolo" Placeholder="Inserisci un titolo"/>
+        <Entry x:Name="entDescrizione" Placeholder="Inserisci una descrizione"/>
+        <Entry x:Name="entSviluppatore" Placeholder="Inserisci un sviluppatore"/>
+        <Entry x:Name="entPath" Placeholder="Inserisci un persocorso immagine"/>
+        <Button x:Name="btnAggiungi" Text="Aggiungi Videogame" Clicked="btnAggiungi_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

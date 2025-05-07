@@ -12,5 +12,9 @@
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
+        <ShellContent
+            Title="Informations"
+            ContentTemplate="{DataTemplate local:InfoPage}"
+            Route="MainPage" />
     </TabBar>
 </Shell>

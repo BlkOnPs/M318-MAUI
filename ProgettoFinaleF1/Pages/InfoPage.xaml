@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgettoFinaleF1.InfoPage"
+             Title="InfoPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BorderColor="DarkGray" CornerRadius="12" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="F1 2025 - Griglia Stabilita" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Header" TextColor="Orange"/>
+                    <Picker x:Name="PickDrivers" HorizontalTextAlignment="Center" SelectedIndexChanged="PickDrivers_SelectedIndexChanged" Title="Seleziona un pilota per vedere le sue informazioni" WidthRequest="500"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="Orange" CornerRadius="12" Padding="15" HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="60" Padding="50" >
+                    <VerticalStackLayout Spacing="20" HorizontalOptions="Start">
+                        <Image x:Name="ImgDriver" WidthRequest="400"/>
+                        <HorizontalStackLayout Spacing="10" HorizontalOptions="Start">
+                            <Image x:Name="ImgNumber" WidthRequest="200"/>
+                            <Image x:Name="ImgHelmet" WidthRequest="200"/>
+                        </HorizontalStackLayout>
+                        <Image x:Name="ImgCar" Source="oscar_car.png" WidthRequest="300"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Spacing="20" HorizontalOptions="End">
+                        <Label Text="Nome" FontAttributes="Bold"/>
+                        <Entry x:Name="EntNome" IsReadOnly="True"/>
+                    
+                        <Label Text="Cognome" FontAttributes="Bold"/>
+                        <Entry x:Name="EntCognome" IsReadOnly="True"/>
+
+                        <Label Text="Data di nascita" FontAttributes="Bold"/>
+                        <Entry x:Name="EntDataNascita" IsReadOnly="True"/>
+
+                        <Label Text="Nazionalità" FontAttributes="Bold"/>
+                        <Entry x:Name="EntNazionalita" IsReadOnly="True"/>
+
+                        <Label Text="Team" FontAttributes="Bold"/>
+                        <Entry x:Name="EntTeam" IsReadOnly="True"/>
+
+                        <Label Text="Gare vinte" FontAttributes="Bold"/>
+                        <Entry x:Name="EntNumGareVinte" IsReadOnly="True"/>
+
+                        <Label Text="Campioni del mondo" FontAttributes="Bold"/>
+                        <Entry x:Name="EntCampione" IsReadOnly="True"/>
+                    </VerticalStackLayout>
+                    
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

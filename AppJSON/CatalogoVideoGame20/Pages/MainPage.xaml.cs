@@ -1,52 +1,50 @@
-﻿using CatalogoVideoGame20.Models;
+﻿using CatalogoVideoGame20.Helpers;
+using CatalogoVideoGame20.Models;
+using System.Text.Json;
 using System.Xml.Schema;
 namespace CatalogoVideoGame20
 {
-
-    
-
-    
     public partial class MainPage : ContentPage
     {
-        List<Videogame> videogames = new List<Videogame>();
+        CatalogoVideogames catalogo;
         Videogame selezionato;
 
-        Developer d1;
-        Developer d2;
+        private readonly JsonSerializerOptions options = new()
+        {
+            PropertyNameCaseInsensitive = true,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            IncludeFields = true
+        };
 
-        Videogame v1;
-        Videogame v2;
         public MainPage()
         {
             InitializeComponent();
-            d1 = new Developer("Activision", "California");
-            d2 = new Developer("Mojang", "Stockholm ");
-
-            v1 = new Videogame("Minecraft",d1, "In Minecraft, players explore a procedurally generated, " +
-                "three-dimensional world with virtually infinite terrain made up of voxels.","mine.jpg");
-            v2 = new Videogame("Call Of Duty", d2, "Call of Duty is a first-person shooter video game based " +
-                "on id Tech 3, and was released on October 29, 2003. ", "cod.jpg");
-
-            RiempiLista();
+            ReadJson();
         }
 
-        public void RiempiLista()
+        private void ReadJson ( )
         {
-            videogames.Add(v1);
-            videogames.Add(v2);
-
-            PickVideogames.ItemsSource = videogames;
+            if (File.Exists (PathHelper.GetConfigJsonPath ()))
+            {
+                string jsonString = File.ReadAllText (PathHelper.GetConfigJsonPath ());
+                catalogo = JsonSerializer.Deserialize<CatalogoVideogames> (jsonString, options);
+                PickVideogames.ItemsSource = catalogo.Videogames;
+            }
+            else
+            {
+                string jsonString = "{\"Videogames\":[]}";
+                File.WriteAllText (PathHelper.GetConfigJsonPath (), jsonString);
+            }
         }
 
         private void PickVideogames_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selezionato = (Videogame) PickVideogames.SelectedItem;
-
+            selezionato = (Videogame)PickVideogames.SelectedItem;
             entTitolo.Text = selezionato.Title;
-            entSviluppatore.Text = selezionato.Developer.ToString();
+            entSviluppatore.Text = selezionato.Name;
             entDescrizione.Text = selezionato.Description;
-            imageGalleria.Source = selezionato.Image;
+            entDescrizione.Text = selezionato.Commento;
         }
     }
-
 }

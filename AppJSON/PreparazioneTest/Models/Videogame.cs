@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatalogoVideoGame20.Models
+namespace PreparazioneTest.Models
 {
     internal class Videogame
     {
@@ -16,13 +16,12 @@ namespace CatalogoVideoGame20.Models
 			set { _title = value; }
 		}
 
-		private string _developer
-			;
+		private string _name;
 
 		public string Name
 		{
-			get { return _developer; }
-			set { _developer = value; }
+			get { return _name; }
+			set { _name = value; }
 		}
 
 		private string _description;
@@ -49,15 +48,31 @@ namespace CatalogoVideoGame20.Models
 			set { _image = value; }
 		}
 
-        public Videogame(string title, string developer, string description, string image)
+        public Videogame ( string title, string name, string description, string image )
         {
             Title = title;
-            Name = developer;
+            Name = name;
             Description = description;
             Image = image;
         }
 
-        public override string? ToString()
+		public Videogame ( ) { }
+
+        public override bool Equals ( object? obj )
+        {
+			return obj is Videogame videogame &&
+				Title == videogame.Title &&
+				Name == videogame.Name &&
+				Description == videogame.Description &&
+				Image == videogame.Image;
+        }
+
+        public override int GetHashCode ( )
+        {
+			return HashCode.Combine (Title, Name, Description);
+        }
+
+        public override string? ToString ( )
         {
             return Title + " - " + Name;
         }
